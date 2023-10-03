@@ -63,7 +63,7 @@ if [ -f $BUILD_DIR/node_modules/replace/package.json ]; then
 else
   echo "-----> Installing dependencies for CDN prepend rewriting"
   if $use_yarn; then
-    yarn add replace --no-lockfile
+    yarn add replace --no-lockfile --ignore-engines
   else
     npm install replace
   fi
