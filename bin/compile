@@ -43,7 +43,7 @@ if [ -f $1/bower.json ]; then
   echo "-----> Installing Bower package manager"
 
   if $use_yarn; then
-    yarn add bower --no-lockfile
+    yarn add bower --no-lockfile --ignore-engines
   else
     npm install bower
   fi
